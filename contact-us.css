@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row{
+	width: 450px;
+    margin: 0 auto;
+    background: rgba(254, 251, 251, 0.29);
+    padding: 10px 5px;
+}
+.reponse-form-input{
+	float: right;
+    width: 100%;
+    padding: 10px;
+}
+#response-comment-text-area{
+	width: 100%;
+    resize: none;
+}
+#title-text{
+	display: inline-block;
+	margin-bottom: 25px;
+    color: white;
+}
+#login-div{
+	text-align: center;
+    padding-top: 7%;
+}
+.send-button{
+	width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    border-color: transparent;
+    background-color: orangered;
+    color: white;
+    margin-top: 30px;
+    text-decoration: none;
+    border: none;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-bottom: 30%;
+}
+
+.send-button:hover{
+	background-color: lightcoral;
+	text-decoration: none;
+	border: none;
+}
+.error-message{
+    padding-left: 5px;
+    display: block;
+    color: white;
+    font-weight: 400;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+    /* display: none; */
+    background-color: #555D60;
+    width: 100%;
+    padding-left: 15px;
+    /*padding-top: 6px;*/
+    font-size: 12px;
+}
+.status-check{
+	background-color: #94A3A7;
+    width: 450px;
+    margin: 0 auto;
+    padding: 15px;
+    display: none;
+}
+.status-image{
+	width: 20px;
+    float: left;
+    margin-left: 10px;
+    /*margin-top: 10px;*/
+}
+.status-text{
+	font-size: 18px;
+	color: white;
+	margin-right: 15px;
+}
+/*.tick-mark{
+	position: absolute;
+    cursor: pointer;
+    left: 45%;
+    padding-top: 5px;
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+}
+.check{
+	left: 85%;
+}*/
+
+
+/* Popup container - can be anything you want */
+/*.send-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+ .error-message {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+
+ .error-message::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+
+ .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}*/
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 480px) {
+    .column {
+        width: 100%;
+    }
+    .row, #invalid-submit{
+	width: 280px;
+   }
+   #valid-submit{
+	width: 295px;
+   }
+   .status-image{
+   	margin-top: 10px;
+   }
+   #login-div{
+   	padding-top: 30px;
+   }
+   
+}

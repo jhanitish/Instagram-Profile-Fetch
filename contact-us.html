@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta charset="utf-8">
+		<title>Contact Us Page</title>
+        <link href="contact-us.css" type="text/css" rel="stylesheet"/>
+        <link href="template.css" type="text/css" rel="stylesheet"/>
+        <script src="contact-us.js"></script>
+	</head>
+	<body>
+		<div class="topnav">
+			  <img src="line.png" class="line-image">
+			  <a href="home-page.html">Home</a>
+			  <a href="#news">People</a>
+			  <a href="contact-us.html" class="active">Contact</a>
+		</div>
+		<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+               <img src="line.png" class="line-image-class">
+			  </a>
+			  <a href="#" class="nav-category">Home</a>
+			  <a href="#" class="nav-category">People</a>
+			  <a href="#" class="nav-category" class="active">Contact</a>
+		</div>
+        <div class="nav-button">
+			  <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> -->
+			    <span id="mobile-navigation-button" onclick="openNav()"><!--&#9776;-->
+									<div class="mobile-navigation-div"></div>
+									<div class="mobile-navigation-div"></div>
+									<div class="mobile-navigation-div"></div>
+			    </span>
+			    <img src="line.png" class="line-image-class">
+		</div>
+        
+        <div class="winter">
+        	<div id="login-div" style="text-align:center;">
+				<h2 id="title-text" >WE WOULD LOVE TO <br/> HEAR FROM YOU</h2>
+
+				<div class="status-check" id="valid-submit">
+					<img class="status-image" src="tick-yes.png"> <span class="status-text" >Thank you, we have received your message.</span>
+				</div>
+
+                <div class="status-check" id="invalid-submit">
+				<img class="status-image" src="try-again.png"><span class="status-text" >Please complete the form and try again.</span>
+				</div>
+
+				<div class="row" id="input-div">
+				  <div class="column">
+				      <input id="response-first-name-input" class="reponse-form-input" type="text" placeholder="First name" style="float:right;"><!-- <span class="tick-mark">&#10003;</span> -->
+				      <label id="response-first-name-error-message" class="error-message" align="left">We need your first name.</label>
+				  </div>
+				  <div class="column">
+				       <input id="response-last-name-input" class="reponse-form-input" placeholder="Last name" type="text"><!-- <span class="tick-mark check">&#10003;</span> -->
+				       <label id="response-last-name-error-message" class="error-message" align="left">We need your last name.</label>
+				  </div>
+				  <div class="column">
+				    <input id="response-email-input" class="reponse-form-input" type="text" placeholder="Your e-mail address" style="float:right;"><!-- <span class="tick-mark">&#10003;</span> -->
+				    <label id="response-email-error-message" class="error-message" align="left">Please use a valid e-mail address.</label>
+				  </div>
+				  <div class="column">
+				    <input id="response-mobile-input" class="reponse-form-input" placeholder="Your phone number (optional)" type="text">
+				  </div>
+				  <div class="column" style="width:100%;">
+				    <textarea id="response-comment-text-area" class="reponse-form-input" rows="5" placeholder="Your message..."></textarea><!-- <span class="tick-mark check">&#10003;</span> -->
+				    <label id="response-comment-error-message" class="error-message" align="left">Sorry, your message can't be empty.</label>
+				  </div>
+				</div>
+				<button id="post-button" class="send-button" type="button">Send</button>
+			</div>	
+
+
+
+
+        </div> <!-- Background Image Ends -->	  
+
+        <div class="footer">
+        	<img src="facebook2.png" class="share-logo">
+        	<img src="twitter2.png" class="share-logo">
+        	<img src="instagram2.png" class="share-logo">
+        </div>
+
+	</body>
+</html>			

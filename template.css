@@ -1,0 +1,135 @@
+            body, html {
+			    height: 100%;
+			    margin: 0;
+			    overflow-x: hidden;
+			    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+			}
+
+			.winter {
+			    /* The image used */
+			    background-image: url("Feed_bg.jpg");
+			    overflow: hidden; 
+			    background-position: center;
+			    background-repeat: no-repeat;
+			    background-size: cover;
+			}
+
+			.topnav {
+			  overflow: hidden;
+			  background-color: black;
+			}
+
+			.topnav a {
+			  float: left;
+			  display: block;
+			  color: grey;
+			  text-align: center;
+			  padding: 25px;
+			  text-decoration: none;
+			  font-size: 17px;
+			}
+
+			.topnav a:hover {
+			  color: pink;
+			}
+
+			.topnav a.active {
+			    color: white;
+			}
+			.line-image{
+				width: 80px;
+				float: left;
+				padding: 10px 20px;
+
+			}
+			.sidenav a.active {
+			    color: pink;
+			}
+			.sidenav {
+			    height: 100%;
+			    width: 0;
+			    position: fixed;
+			    z-index: 1;
+			    top: 0;
+			    left: 0;
+			    background-color: black;
+			    overflow-x: hidden;
+			    transition: 0.5s;
+			    padding-top: 60px;
+			    text-align:center;
+			}
+
+			.sidenav a {
+			    /*padding: 8px 8px 8px 32px;*/
+			    text-decoration: none;
+			    font-size: 25px;
+			    color: #818181;
+			    display: block;
+			    transition: 0.3s;
+
+			}
+
+			.sidenav a:hover{
+			    color: #f1f1f1;
+			}
+
+			.sidenav .closebtn {
+			    position: absolute;
+			    top: 0;
+			    font-size: 65px;
+			    border-bottom: 2px solid white;
+			    width: 100%;
+			    text-align: left;
+			    color: white;
+			    padding-left: 20px;
+			}
+			.nav-button{
+				overflow: hidden;
+    			background-color: black;
+    			padding: 10px 20px;
+			}
+			#mobile-navigation-button {
+			    float: left;
+			    cursor: pointer;
+			    margin-top: 7px;
+			    margin-right: 5px;
+			}
+			.mobile-navigation-div {
+			    width: 30px;
+			    height: 4px;
+			    background-color: white;
+			    margin: 5px 0;
+			    border-radius: 1px;
+			}
+			.line-image-class{
+				width: 42px;
+				margin-left: 30%;
+			}
+			.nav-category{
+				padding-top: 13%;
+				padding-bottom: 15px;
+				font-size: 20px;
+				font-weight: bold; 
+			}
+			.footer{
+				width: 100%;
+			    background-color: black;
+			    text-align: center;
+			    padding: 15px;
+			}
+
+			@media screen and (max-height: 450px) {
+			  .sidenav {padding-top: 15px;}
+			  .sidenav a {font-size: 18px;}
+			  
+			}
+			@media(max-width:480px){
+				.topnav{
+			  	display: none;
+			  }
+			}
+			@media(min-width:480px){
+				.nav-button{
+					display: none;
+				}
+			}

@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta charset="utf-8">
+		<title>Home Page</title>
+        <link href="home-page.css" type="text/css" rel="stylesheet"/>
+        <link href="template.css" type="text/css" rel="stylesheet"/>
+        <script src="home-page.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="topnav">
+			  <img src="line.png" class="line-image">
+			  <a href="home-page.html" class="active">Home</a>
+			  <a href="#news">People</a>
+			  <a href="contact-us.html">Contact</a>
+		</div>
+		<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+               <img src="line.png" id="logo-class" class="line-image-class">
+			  </a>
+			  <a href="#" class="nav-category" style="margin-top: 50px;">Home</a>
+			  <a href="#" class="nav-category">People</a>
+			  <a href="#" class="nav-category" class="active">Contact</a>
+		</div>
+        <div class="nav-button">
+			  <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> -->
+			    <span id="mobile-navigation-button" onclick="openNav()"><!--&#9776;-->
+									<div class="mobile-navigation-div"></div>
+									<div class="mobile-navigation-div"></div>
+									<div class="mobile-navigation-div"></div>
+			    </span>
+			    <img src="line.png" class="line-image-class">
+		</div>
+
+
+        <div class="slideshow-container">
+
+				<div class="mySlides fade" id="walibi">
+				  <div class="text">WALIBI</div>
+				  <img src="Walibi.jpg" style="width:100%; height: 800px;">
+				</div>
+
+				<div class="mySlides fade" id="oxxio">
+				  <div class="text">OXXIO</div>
+				  <img src="Oxxio.png" style="width:100%; height: 800px;">
+				</div>
+
+				<div class="mySlides fade" id="florensis">
+				  <div class="text">FLORENSIS</div>
+				  <img src="Florensis.jpg" style="width:100%; height: 800px;">
+				</div>
+
+				<div class="row" style="text-align: center;">
+					<!-- <div class="column"> -->
+						<div><a class="prev" onclick="plusSlides(-1)">&#10094;</a></div>
+						<div><button class="button">View case</button></div>
+						<div><a class="next" onclick="plusSlides(1)">&#10095;</a></div>
+                    <!-- </div> -->
+					<!-- <div class="column" id="button-id">	
+						<button class="button">View case</button>
+					</div>
+					<div class="column" style="float: right;">	
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div> -->
+				</div>	
+				<div class="mouse-class" style="text-align: center;">
+					<a class="mouse"><span class="mouse-button">&#9595;</span></a>
+				</div>
+				<div class="mouse-class" style="text-align: center;">
+					<a class="down-arrow">&#10095;</a>
+				</div>
+				<div class="double-arrow-class" style="text-align: center;">
+					<a class="mouse-arrow"><span class="double-arrow">&#8811;</span></a>
+				</div>
+
+		</div>
+		<div class="tam-text" style="text-align: center; padding: 20px;">
+			<h2 style="font-family: Lato; font-size: 30px; font-weight: 900; line-height: 42px; color: #2e2f31;">WE ARE TAM TAM</h2>
+			<p class="paragraph-text">Tam Tam is a full service digital agency focusing on Dutch Digital Service Design. We combine strategy, design, technology and interaction to make the digital interactions between company and customer valuable and memorable. We work for awesome brands with a team of 120 digitals from our office in Amsterdam. Making great work and having a blast doing it. That’s what we believe in. </p>
+			
+		</div>
+		
+		<div class="winter">
+			<div style="text-align: center; padding-top: 30px;">
+				<h2 style="font-size: 30px; font-weight: bold; color: #789199;">FOLLOW US ON INSTAGRAM</h2>
+			    <h4 style="font-size: 25px; color: white;" >@tamtamnl</h4>
+			</div>
+
+			<div class="insta">
+				  <div class="column-insta">
+				    <div class="card">
+				      <img src="1.jpg" class="insta-image" alt="Jane" style="width:100%; height: 300px;">
+				      <div class="container">
+				        <p class="insta-text">Last Thursday emerce organised their own ADE and we were part of it! Where are you gonna party tonight? #ADE#tbt #enight #tamtam</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="column-insta">
+				    <div class="card">
+				      <img src="2.jpg" class="insta-image" alt="Mike" style="width:100%; height: 300px;">
+				      <div class="container">
+				        <p class="insta-text">We're feeling happier and happier thanks to these nice dutch flowers we received from Florensis! #holland #flowers #doordebloemenofficenietmeerzien #settingthebloemetjesoutside</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="column-insta">
+				    <div class="card">
+				      <img src="3.jpg" class="insta-image" alt="John" style="width:100%; height: 300px;">
+				      <div class="container">
+				        <p class="insta-text">We are VERY VERY happy with our Silver Lovie Award and People's Lovies Winner for the Docters without borders website! #lovies #tamtamhome #proud #celebration</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="column-insta">
+				    <div class="card">
+				      <img src="4.jpg" class="insta-image" alt="Jane" style="width:100%; height: 300px;">
+				      <div class="container">
+				        <p class="insta-text">Thanks @radio538 and @maxpinas for bringing us friday beats with our brand new #marshall speakers! #friyay #gift #speaker #tamtamhome</p>
+				      </div>
+				    </div>
+				  </div>
+				  <!-- <div class="column-insta">
+				    <div class="card">
+				      <img src="5.jpg" class="insta-image" alt="Mike" style="width:100%; height: 300px;">
+				      <div class="container">
+				        <p class="insta-text">Friyay! Coffee anyone? #almostweekend #tamtamhome #koffiemax #latteart</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="column-insta">
+				    <div class="card">
+				      <img src="6.jpg" class="insta-image" alt="John" style="width:100%; height: 300px;">
+				      <div class="container">
+				        <p class="insta-text">TamTam Talks Search Edition! First edition with our new colleagues from Expand Online👌💪🏻 #tamtamhome #tttalks #breakfast #search</p>
+				      </div>
+				    </div>
+				  </div> -->
+                
+       
+				</div>
+		</div>
+
+
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+
+
+
+        <div class="footer">
+        	<img src="facebook2.png" class="share-logo">
+        	<img src="twitter2.png" class="share-logo">
+        	<img src="instagram2.png" class="share-logo">
+        </div>
+
+        <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+	</body>
+</html>			

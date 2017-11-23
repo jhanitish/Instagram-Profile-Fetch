@@ -1,0 +1,235 @@
+ html {
+    box-sizing: border-box;
+}
+body {font-family: Verdana,sans-serif;margin:0}
+.mySlides {display:none}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    /*float: left;*/
+    /*width: 33.33%;*/
+    /*padding: 10px;*/
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next, .button, .mouse, .down-arrow,.double-arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  //padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  padding: 6px 14px;
+}
+.mouse{
+	  top: 85%;
+	  border: 1px solid;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    background-color: white;
+    border-radius: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: -13px; 
+}
+.down-arrow{
+	top: 95%;
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+  text-align: center;
+
+}
+.arrow{
+	top: 91%;
+
+}
+
+.paragraph-text{
+  padding:20px;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 33px;
+  color: #000000;
+}
+
+.double-arrow{
+	-ms-transform: rotate(90deg); /* IE 9 */
+	-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+	transform: rotate(90deg);
+	background-color: white;
+    border: 0px;
+    padding: 7px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    color: black; 
+    top: 92%;
+}
+.mouse-button{
+	border: 2px solid black;
+    border-radius: 12px;
+    padding-top: 1px;
+    padding-bottom: 15px;
+    padding-left: 2px;
+    padding-right: 2px;
+    color: black;
+    font-weight: bold;
+    top: 78%;
+}
+
+/* Position the "next button" to the right */
+.next {
+  /*right: 38%;*/
+  //border-radius: 3px 0 0 3px;
+  border-radius: 50px;
+  background-color: black;
+  width: 40px;
+  height:40px;
+  margin-left: 93px;
+}
+.prev {
+  /*left: 39%;*/
+  //border-radius: 3px 0 0 3px;
+  border-radius: 50px;
+  background-color: black;
+  width: 40px;
+  height:40px;
+  margin-left: -122px;
+}
+.button{
+    border-radius: 30px;
+    height: 40px;
+    width: 130px;
+    background-color: black;
+    border-color: black;
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: -60px;
+    /*left:44%;*/
+}
+
+.column-insta {
+  /*float: left;*/
+  /*width: 50%;*/
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.insta{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+.insta-text{
+	color: #76797f;
+	font-size: 15px;
+	word-wrap: break-word;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover, .button:hover{
+  background-color: #fd5454;
+  border-color: #fd5454;
+}
+.mouse-button:hover {
+  border-color: #fd5454;
+  color: #fd5454;
+}
+/* Caption text */
+.text {
+    padding: 8px 15px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    top: 33%;
+    font-family: Lato;
+    font-size: 50px;
+    font-weight: 900;
+    color: #000000;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+/*@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}*/
+
+@media (max-width: 480px) {
+	.column-insta {
+	    width: 100%;
+	    display: block;
+	  }
+}
+@media(max-width:767px){
+	.double-arrow-class{display:block;}
+	.mouse-class{display:none;}
+	/*.column-insta {
+	    width: 50%;
+	    display: block;
+	  }*/
+}
+@media(min-width:768px){
+	.double-arrow-class{display:none;}
+	.mouse-class{display:block;}
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
